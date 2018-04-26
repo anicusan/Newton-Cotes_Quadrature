@@ -7,7 +7,7 @@ function [ I1 ] = IntegralNC(f,a,b,m,n)
     % f = function
     % a,b = interval
     % m = number of divisions
-    % n = order (3 = Newton)
+    % n = degree (3 = Newton)
 I1 = 0;
 for l = 0:(m - 1)
     y0 = a + l * (b - a) / m;
